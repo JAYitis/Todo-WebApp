@@ -88,7 +88,7 @@ app.get("/:customListName", function(req,res){
                 res.redirect("/" + customListName)
             } else {
                 //Show an existing list
-                res.render("List", {listTitle: foundList.name, newListItems: foundList.items})
+                res.render("list", {listTitle: foundList.name, newListItems: foundList.items})
             }
         }
     });
